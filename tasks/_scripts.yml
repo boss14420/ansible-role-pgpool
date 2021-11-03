@@ -29,7 +29,7 @@
 - name: Scripts | Copy pgpool_remote_start script
   template:
     src: "{{ pgpool_remote_start_template }}"
-    dest: "{{ pgpool_postgresql_data_directory }}/log"
+    dest: "{{ pgpool_postgresql_data_directory }}/pgpool_remote_start"
     owner: "{{ pgpool_postgresql_service_user }}"
     group: "{{ pgpool_postgresql_service_group }}"
     mode: 0775
